@@ -5,7 +5,7 @@ num_limit = input("Enter the limit: \n")
 
 import random
 n = random.randrange(1,num_limit)
-print("I'm thinking of a number 1 through" num_limit)
+print("I'm thinking of a number 1 through, num_limit")
 guess = int(input("Enter any number: "))
 while n!= guess:
     if guess < n:
