@@ -1,0 +1,19 @@
+# Kasey Willey CIS261 Guessing Game
+def play_game():
+	print("Guess the number: \n") # called function for playing game
+num_limit = input("Enter the limit: \n")
+
+import random
+n = random.randrange(1,num_limit)
+print("I'm thinking of a number 1 through" num_limit)
+guess = int(input("Enter any number: "))
+while n!= guess:
+    if guess < n:
+        print("Too low")
+        guess = int(input("Enter number again: "))
+    elif guess > n:
+        print("Too high!")
+        guess = int(input("Enter number again: "))
+    else:
+      break
+print("you guessed it right!!")
